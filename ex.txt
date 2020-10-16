@@ -1,0 +1,45 @@
+Descrição
+Escreva um algoritimo que determine se um número N é um impostor ou não. Números impostores são identificados da seguinte maneira:
+Dado um número inteiro, substitua-o pela soma dos quadrados dos seus dígitos
+Repita este processo inúmeras vezes
+Se o valor obtido for 1, este número é o impostor
+Caso contrário, o ciclo se repetirá infinitamente e o impostor nunca será encontrado
+
+
+Exemplos explicados
+1) Suponha que você tenha como entrada o número N=13. Logo, vamos verificar se ele é um impostor:
+1² + 3² = 1 + 9 = 10 
+1² + 0² = 1 + 0 = 1
+Como o número final é 1, 13 é um impostor entre nós!
+
+2) Agora suponha que você tenha como entrada o número N=8. Vamos verificar se ele é um impostor:
+8² = 16
+1² + 6² = 1 + 36 = 37
+3² + 7² = 9 + 49 = 58
+5² + 8² = 25 + 64 = 89
+...
+Essa sequência vai se estender e nunca vai acabar em 1. Logo, 8 não é impostor entre nós.
+
+Dica
+Os únicos números menores que 10 que são impostores é 1 e 7.
+
+
+Limites da entrada
+N é um inteiro (int) positivo
+
+
+Padrão de entrada e saída
+A entrada sempre será um número N
+A saída sempre será SIM ou NAO, ou seja, sim se for um impostor e não caso contrário
+
+
+Exemplos
+Entrada     -     Saída
+8                -     NAO
+13              -     SIM
+0                -     NAO
+1888          -     SIM
+1889          -     NAO
+
+
+ATENÇÃO: o exercício é corrigido de maneira automática. Se você não seguir o padrão de entrada e saída, a nota retornada será ZERO.
